@@ -20,7 +20,7 @@ public class Calculator_StepDef {
     @Then("I should get {int}")
     public void i_should_get(int expectedResult) {
         System.out.println("Then I should get "+expectedResult);
-       
+       Assert.assertEquals(actualResult, expectedResult);
     }
 
 
